@@ -40,6 +40,92 @@ export const company_logos = [
   google_logo,
 ]
 
+export const servicesData = [
+  {
+    title: 'Advertising',
+    description: 'We help you manage your ads campaigns effectively to reach your target audience and maximize ROI.',
+    icon: ads_icon,
+  },
+  {
+    title: 'Content marketing',
+    description: 'We create and distribute valuable content to attract and engage your target audience, driving brand awareness and loyalty.',
+    icon: marketing_icon,
+  },
+  {
+    title: 'Content writing',
+    description: 'We create compelling and engaging content that resonates with your target audience and drives conversions.',
+    icon: content_icon,
+  },
+  {
+    title: 'Social media',
+    description: 'We help you manage your social media presence to connect with your audience and build brand awareness.',
+    icon: social_icon,
+  },
+]
+
+export const workData = [
+  {
+    title: 'Mobile app marketing',
+    description: 'We helped a mobile app company increase their user acquisition and retention through targeted marketing campaigns.',
+    image: work_mobile_app,
+  },
+
+  {
+    title: 'Dashboard management',
+    description: 'We help you manage your dashboard to track performance and make data-driven decisions.',
+    image: work_dashboard_management,
+  },
+
+  {
+    title: 'Fitness app promotion',
+    description: 'We help a fitness app company increase their user engagement and retention through targeted promotional campaigns.',
+    image: work_fitness_app,
+  },
+]
+
+export const teamData = [
+  {
+    name: 'Haley Carter',
+    title: 'CEO & founder',
+    image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200',
+  },
+  {
+    name: 'James Walker',
+    title: 'Ads manager',
+    image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200',
+  },
+  {
+    name: 'Jessica Morgan',
+    title: 'Vice president',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop',
+  },
+  {
+    name: 'Ashley Bennett',
+    title: 'Marketing & sales',
+    image: 'https://randomuser.me/api/portraits/women/10.jpg',
+  },
+  {
+    name: 'Emily Parker',
+    title: 'Content marketer',
+    image: 'https://randomuser.me/api/portraits/women/11.jpg',
+  },
+  {
+    name: 'Ryan Mitchell',
+    title: 'Content writer',
+    image: 'https://randomuser.me/api/portraits/men/9.jpg',
+  },
+  {
+    name: 'Megan Brooks',
+    title: 'Performance manager',
+    image: 'https://randomuser.me/api/portraits/women/12.jpg',
+  },
+  {
+    name: 'Amber Foster',
+    title: 'Senior writer',
+    image: 'https://randomuser.me/api/portraits/women/14.jpg',
+  },
+]
+
 const assets = {
   logo,
   arrow_icon,
@@ -70,13 +156,13 @@ const assets = {
 
 export default assets
 
-export const teamData = [
-  { name: 'Haley Carter', title: 'CEO & founder', image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200' },
-  { name: 'James Walker', title: 'Ads manager', image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200' },
-  { name: 'Jessica Morgan', title: 'Vice president', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop' },
-  { name: 'Ashley Bennett', title: 'Marketing & sales', image: 'https://randomuser.me/api/portraits/women/10.jpg' },
-  { name: 'Emily Parker', title: 'Content marketer', image: 'https://randomuser.me/api/portraits/women/11.jpg' },
-  { name: 'Ryan Mitchell', title: 'Content writer', image: 'https://randomuser.me/api/portraits/men/9.jpg' },
-  { name: 'Megan Brooks', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/12.jpg' },
-  { name: 'Amber Foster', title: 'Senior writer', image: 'https://randomuser.me/api/portraits/women/14.jpg' },
-]
+// export const teamData = [
+//   { name: 'Haley Carter', title: 'CEO & founder', image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200' },
+//   { name: 'James Walker', title: 'Ads manager', image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200' },
+//   { name: 'Jessica Morgan', title: 'Vice president', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop' },
+//   { name: 'Ashley Bennett', title: 'Marketing & sales', image: 'https://randomuser.me/api/portraits/women/10.jpg' },
+//   { name: 'Emily Parker', title: 'Content marketer', image: 'https://randomuser.me/api/portraits/women/11.jpg' },
+//   { name: 'Ryan Mitchell', title: 'Content writer', image: 'https://randomuser.me/api/portraits/men/9.jpg' },
+//   { name: 'Megan Brooks', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/12.jpg' },
+//   { name: 'Amber Foster', title: 'Senior writer', image: 'https://randomuser.me/api/portraits/women/14.jpg' },
+// ]
