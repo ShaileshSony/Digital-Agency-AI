@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero';
-import TrustedBy from './components/TrustedBY';
+import TrustedBy from './components/TrustedBy'
 import Services from './components/Services';
 import OurWork from './components/OurWork';
 import Teams from './components/Teams';
