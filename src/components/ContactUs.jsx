@@ -2,18 +2,10 @@ import React, { useState } from "react";
 import Title from "./Title";
 import assets from "../assets/assets";
 import { toast } from "react-hot-toast";
+import { motion } from "motion/react";
 
 const ContactUs = () => {
-  // key = 3b77209c-6584-4e17-b535-5a0e9b1660ba
-
-  //    <form action="https://api.web3forms.com/submit" method="POST">
-  //   <input type="hidden" name="access_key" value="3b77209c-6584-4e17-b535-5a0e9b1660ba">
-  //   <input type="text" name="name" required>
-  //   <input type="email" name="email" required>
-  //   <textarea name="message" required></textarea>
-  //   <button type="submit">Submit</button>
-  // </form>
-
+  
   const [result, setResult] = useState(null);
 
   const onSubmit = async (e) => {
@@ -37,7 +29,7 @@ const ContactUs = () => {
       } else {
         // console.log("Error",data)
         // setResult(data.message || "Something went wrong");
-        toast(data.message)
+        toast(data.message);
       }
     } catch (error) {
       toast.error(error.message);
@@ -45,7 +37,11 @@ const ContactUs = () => {
   };
 
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      transition={{ staggerChildren: 0.2 }}
+      viewport={{ once: true }}
       id="contact-us"
       className="flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white"
     >
@@ -54,7 +50,11 @@ const ContactUs = () => {
         desc="Have questions or want to get in touch? We’d love to hear from you!"
       />
 
-      <form
+      <motion.form
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.4 }}
+        viewport={{ once: true }}
         onSubmit={onSubmit}
         className="grid sm:grid-cols-2 gap-3 sm:gap-5 max-w-2xl w-full"
       >
@@ -103,8 +103,8 @@ const ContactUs = () => {
         >
           Submit <img src={assets.arrow_icon} width="14" alt="Arrow Icon" />
         </button>
-      </form>
-    </div>
+      </motion.form>
+    </motion.div>
   );
 };
 

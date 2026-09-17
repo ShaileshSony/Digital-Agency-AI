@@ -26,7 +26,7 @@ const App = () => {
       mouse.current.y = e.clientY
     }
 
-    // document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mousemove', handleMouseMove);
 
     const animate = () => {
       position.current.x += (mouse.current.x - position.current.x) * 0.1;
